@@ -1,0 +1,385 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:ex="http://example.org/biomedical_kg/"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+>
+  <rdf:Description rdf:about="http://example.org/biomedical_kg/resource/Skin_Barrier">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://example.org/biomedical_kg/Biological_Process"/>
+    <rdfs:label>Skin Barrier</rdfs:label>
+    <ex:type>Biological Process</ex:type>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/biomedical_kg/damages">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label>damages</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/biomedical_kg/resource/Ketoconazole">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://example.org/biomedical_kg/Drug"/>
+    <rdfs:label>Ketoconazole</rdfs:label>
+    <ex:type>Drug</ex:type>
+    <ex:treats rdf:resource="http://example.org/biomedical_kg/resource/Seborrheic_Dermatitis"/>
+    <ex:treats rdf:resource="http://example.org/biomedical_kg/resource/Dandruff"/>
+    <ex:related_to rdf:resource="http://example.org/biomedical_kg/resource/Seborrheic_Dermatitis"/>
+    <ex:related_to rdf:resource="http://example.org/biomedical_kg/resource/Dandruff"/>
+    <ex:related_to rdf:resource="http://example.org/biomedical_kg/resource/Ergosterol_Synthesis"/>
+    <ex:treats_relation>treats</ex:treats_relation>
+    <ex:treats_source>47576/37325288</ex:treats_source>
+    <ex:treats_source rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">47576</ex:treats_source>
+    <ex:inhibits rdf:resource="http://example.org/biomedical_kg/resource/Ergosterol_Synthesis"/>
+    <ex:inhibits_relation>inhibits</ex:inhibits_relation>
+    <ex:inhibits_source rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">47576</ex:inhibits_source>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/biomedical_kg/resource/Aspergillus">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://example.org/biomedical_kg/Microorganism"/>
+    <rdfs:label>Aspergillus</rdfs:label>
+    <ex:type>Microorganism</ex:type>
+    <ex:associated_with rdf:resource="http://example.org/biomedical_kg/resource/Fungal_Infection"/>
+    <ex:related_to rdf:resource="http://example.org/biomedical_kg/resource/Fungal_Infection"/>
+    <ex:associated_with_relation>associated_with</ex:associated_with_relation>
+    <ex:associated_with_source rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5052</ex:associated_with_source>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/biomedical_kg/resource/Dandruff">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://example.org/biomedical_kg/Disease"/>
+    <rdfs:label>Dandruff</rdfs:label>
+    <ex:type>Disease</ex:type>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/biomedical_kg/produces">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label>produces</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/biomedical_kg/resource/Malassezia">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://example.org/biomedical_kg/Microorganism"/>
+    <rdfs:label>Malassezia</rdfs:label>
+    <ex:type>Microorganism</ex:type>
+    <ex:causes rdf:resource="http://example.org/biomedical_kg/resource/Dandruff"/>
+    <ex:causes rdf:resource="http://example.org/biomedical_kg/resource/Seborrheic_Dermatitis"/>
+    <ex:related_to rdf:resource="http://example.org/biomedical_kg/resource/Dandruff"/>
+    <ex:related_to rdf:resource="http://example.org/biomedical_kg/resource/Seborrheic_Dermatitis"/>
+    <ex:related_to rdf:resource="http://example.org/biomedical_kg/resource/Lipase"/>
+    <ex:related_to rdf:resource="http://example.org/biomedical_kg/resource/Inflammatory_Response"/>
+    <ex:causes_relation>causes</ex:causes_relation>
+    <ex:causes_source>37325288/14450/29946996</ex:causes_source>
+    <ex:causes_source rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">14450</ex:causes_source>
+    <ex:produces rdf:resource="http://example.org/biomedical_kg/resource/Lipase"/>
+    <ex:produces_relation>produces</ex:produces_relation>
+    <ex:produces_source rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">29946996</ex:produces_source>
+    <ex:activates rdf:resource="http://example.org/biomedical_kg/resource/Inflammatory_Response"/>
+    <ex:activates_relation>activates</ex:activates_relation>
+    <ex:activates_source rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">29946996</ex:activates_source>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/biomedical_kg/resource/Lipase">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://example.org/biomedical_kg/Enzyme"/>
+    <rdfs:label>Lipase</rdfs:label>
+    <ex:type>Enzyme</ex:type>
+    <ex:breaks_down rdf:resource="http://example.org/biomedical_kg/resource/Sebum"/>
+    <ex:related_to rdf:resource="http://example.org/biomedical_kg/resource/Sebum"/>
+    <ex:breaks_down_relation>breaks_down</ex:breaks_down_relation>
+    <ex:breaks_down_source rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">29946996</ex:breaks_down_source>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/biomedical_kg/resource/Cutibacterium">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://example.org/biomedical_kg/Microorganism"/>
+    <rdfs:label>Cutibacterium</rdfs:label>
+    <ex:type>Microorganism</ex:type>
+    <ex:protects rdf:resource="http://example.org/biomedical_kg/resource/Skin_Microbiome"/>
+    <ex:related_to rdf:resource="http://example.org/biomedical_kg/resource/Skin_Microbiome"/>
+    <ex:protects_relation>protects</ex:protects_relation>
+    <ex:protects_source rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1912216</ex:protects_source>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/biomedical_kg/treats">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label>treats</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/biomedical_kg/resource/Ergosterol_Synthesis">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://example.org/biomedical_kg/Biological_Process"/>
+    <rdfs:label>Ergosterol Synthesis</rdfs:label>
+    <ex:type>Biological Process</ex:type>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/biomedical_kg/resource/Malassezia_Restricta">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://example.org/biomedical_kg/Microorganism"/>
+    <rdfs:label>Malassezia Restricta</rdfs:label>
+    <ex:type>Microorganism</ex:type>
+    <ex:associated_with rdf:resource="http://example.org/biomedical_kg/resource/Dandruff"/>
+    <ex:related_to rdf:resource="http://example.org/biomedical_kg/resource/Dandruff"/>
+    <ex:associated_with_relation>associated_with</ex:associated_with_relation>
+    <ex:associated_with_source>14450/76775</ex:associated_with_source>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/biomedical_kg/resource/Inflammatory_Response">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://example.org/biomedical_kg/Process"/>
+    <rdfs:label>Inflammatory Response</rdfs:label>
+    <ex:type>Process</ex:type>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/biomedical_kg/resource/Staphylococcus">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://example.org/biomedical_kg/Microorganism"/>
+    <rdfs:label>Staphylococcus</rdfs:label>
+    <ex:type>Microorganism</ex:type>
+    <ex:associated_with rdf:resource="http://example.org/biomedical_kg/resource/Dandruff"/>
+    <ex:related_to rdf:resource="http://example.org/biomedical_kg/resource/Dandruff"/>
+    <ex:related_to rdf:resource="http://example.org/biomedical_kg/resource/Skin_Barrier"/>
+    <ex:associated_with_relation>associated_with</ex:associated_with_relation>
+    <ex:associated_with_source>14450/1279</ex:associated_with_source>
+    <ex:damages rdf:resource="http://example.org/biomedical_kg/resource/Skin_Barrier"/>
+    <ex:damages_relation>damages</ex:damages_relation>
+    <ex:damages_source>1279/14450</ex:damages_source>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/biomedical_kg/related_to">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label>related_to</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/biomedical_kg/resource/Itraconazole">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://example.org/biomedical_kg/Drug"/>
+    <rdfs:label>Itraconazole</rdfs:label>
+    <ex:type>Drug</ex:type>
+    <ex:treats rdf:resource="http://example.org/biomedical_kg/resource/Seborrheic_Dermatitis"/>
+    <ex:related_to rdf:resource="http://example.org/biomedical_kg/resource/Seborrheic_Dermatitis"/>
+    <ex:related_to rdf:resource="http://example.org/biomedical_kg/resource/Cytochrome_P450"/>
+    <ex:treats_relation>treats</ex:treats_relation>
+    <ex:treats_source rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">55283</ex:treats_source>
+    <ex:inhibits rdf:resource="http://example.org/biomedical_kg/resource/Cytochrome_P450"/>
+    <ex:inhibits_relation>inhibits</ex:inhibits_relation>
+    <ex:inhibits_source rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">55283</ex:inhibits_source>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/biomedical_kg/resource/Dna_Replication">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://example.org/biomedical_kg/Biological_Process"/>
+    <rdfs:label>Dna Replication</rdfs:label>
+    <ex:type>Biological Process</ex:type>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/biomedical_kg/BiomedicalKnowledgeGraph">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+    <rdfs:label>Biomedical Knowledge Graph</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/biomedical_kg/Biological_Structure">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Biological Structure</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/biomedical_kg/resource/Oleic_Acid">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://example.org/biomedical_kg/Chemical"/>
+    <rdfs:label>Oleic Acid</rdfs:label>
+    <ex:type>Chemical</ex:type>
+    <ex:causes rdf:resource="http://example.org/biomedical_kg/resource/Scalp_Irritation"/>
+    <ex:causes rdf:resource="http://example.org/biomedical_kg/resource/Flaking"/>
+    <ex:related_to rdf:resource="http://example.org/biomedical_kg/resource/Scalp_Irritation"/>
+    <ex:related_to rdf:resource="http://example.org/biomedical_kg/resource/Flaking"/>
+    <ex:causes_relation>causes</ex:causes_relation>
+    <ex:causes_source rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">29946996</ex:causes_source>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/biomedical_kg/resource/Candida">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://example.org/biomedical_kg/Microorganism"/>
+    <rdfs:label>Candida</rdfs:label>
+    <ex:type>Microorganism</ex:type>
+    <ex:associated_with rdf:resource="http://example.org/biomedical_kg/resource/Opportunistic_Infection"/>
+    <ex:related_to rdf:resource="http://example.org/biomedical_kg/resource/Opportunistic_Infection"/>
+    <ex:associated_with_relation>associated_with</ex:associated_with_relation>
+    <ex:associated_with_source rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5475</ex:associated_with_source>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/biomedical_kg/resource/Sebum">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://example.org/biomedical_kg/Substance"/>
+    <rdfs:label>Sebum</rdfs:label>
+    <ex:type>Substance</ex:type>
+    <ex:produces rdf:resource="http://example.org/biomedical_kg/resource/Oleic_Acid"/>
+    <ex:related_to rdf:resource="http://example.org/biomedical_kg/resource/Oleic_Acid"/>
+    <ex:produces_relation>produces</ex:produces_relation>
+    <ex:produces_source rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">29946996</ex:produces_source>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/biomedical_kg/Chemical">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Chemical</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/biomedical_kg/breaks_down">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label>breaks_down</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/biomedical_kg/Symptom">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Symptom</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/biomedical_kg/resource/Malassezia_Globosa">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://example.org/biomedical_kg/Microorganism"/>
+    <rdfs:label>Malassezia Globosa</rdfs:label>
+    <ex:type>Microorganism</ex:type>
+    <ex:associated_with rdf:resource="http://example.org/biomedical_kg/resource/Seborrheic_Dermatitis"/>
+    <ex:related_to rdf:resource="http://example.org/biomedical_kg/resource/Seborrheic_Dermatitis"/>
+    <ex:associated_with_relation>associated_with</ex:associated_with_relation>
+    <ex:associated_with_source>37325288/76773</ex:associated_with_source>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/biomedical_kg/resource/Zinc_Pyrithione">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://example.org/biomedical_kg/Drug"/>
+    <rdfs:label>Zinc Pyrithione</rdfs:label>
+    <ex:type>Drug</ex:type>
+    <ex:treats rdf:resource="http://example.org/biomedical_kg/resource/Dandruff"/>
+    <ex:related_to rdf:resource="http://example.org/biomedical_kg/resource/Dandruff"/>
+    <ex:treats_relation>treats</ex:treats_relation>
+    <ex:treats_source rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">26041</ex:treats_source>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/biomedical_kg/resource/Ciclopirox">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://example.org/biomedical_kg/Drug"/>
+    <rdfs:label>Ciclopirox</rdfs:label>
+    <ex:type>Drug</ex:type>
+    <ex:treats rdf:resource="http://example.org/biomedical_kg/resource/Seborrheic_Dermatitis"/>
+    <ex:related_to rdf:resource="http://example.org/biomedical_kg/resource/Seborrheic_Dermatitis"/>
+    <ex:related_to rdf:resource="http://example.org/biomedical_kg/resource/Dna_Replication"/>
+    <ex:treats_relation>treats</ex:treats_relation>
+    <ex:treats_source rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2749</ex:treats_source>
+    <ex:inhibits rdf:resource="http://example.org/biomedical_kg/resource/Dna_Replication"/>
+    <ex:inhibits_relation>inhibits</ex:inhibits_relation>
+    <ex:inhibits_source rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2749</ex:inhibits_source>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/biomedical_kg/associated_with">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label>associated_with</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/biomedical_kg/resource/Selenium_Sulfide">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://example.org/biomedical_kg/Drug"/>
+    <rdfs:label>Selenium Sulfide</rdfs:label>
+    <ex:type>Drug</ex:type>
+    <ex:treats rdf:resource="http://example.org/biomedical_kg/resource/Dandruff"/>
+    <ex:related_to rdf:resource="http://example.org/biomedical_kg/resource/Dandruff"/>
+    <ex:treats_relation>treats</ex:treats_relation>
+    <ex:treats_source rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">24011</ex:treats_source>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/biomedical_kg/resource/Seborrheic_Dermatitis">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://example.org/biomedical_kg/Disease"/>
+    <rdfs:label>Seborrheic Dermatitis</rdfs:label>
+    <ex:type>Disease</ex:type>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/biomedical_kg/Drug">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Drug</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/biomedical_kg/inhibits">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label>inhibits</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/biomedical_kg/resource/Filobasidium">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://example.org/biomedical_kg/Microorganism"/>
+    <rdfs:label>Filobasidium</rdfs:label>
+    <ex:type>Microorganism</ex:type>
+    <ex:associated_with rdf:resource="http://example.org/biomedical_kg/resource/Skin_Microbiota"/>
+    <ex:related_to rdf:resource="http://example.org/biomedical_kg/resource/Skin_Microbiota"/>
+    <ex:associated_with_relation>associated_with</ex:associated_with_relation>
+    <ex:associated_with_source rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5209</ex:associated_with_source>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/biomedical_kg/resource/Fluconazole">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://example.org/biomedical_kg/Drug"/>
+    <rdfs:label>Fluconazole</rdfs:label>
+    <ex:type>Drug</ex:type>
+    <ex:treats rdf:resource="http://example.org/biomedical_kg/resource/Seborrheic_Dermatitis"/>
+    <ex:related_to rdf:resource="http://example.org/biomedical_kg/resource/Seborrheic_Dermatitis"/>
+    <ex:related_to rdf:resource="http://example.org/biomedical_kg/resource/Ergosterol_Synthesis"/>
+    <ex:treats_relation>treats</ex:treats_relation>
+    <ex:treats_source rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3365</ex:treats_source>
+    <ex:inhibits rdf:resource="http://example.org/biomedical_kg/resource/Ergosterol_Synthesis"/>
+    <ex:inhibits_relation>inhibits</ex:inhibits_relation>
+    <ex:inhibits_source rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3365</ex:inhibits_source>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/biomedical_kg/resource/Opportunistic_Infection">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://example.org/biomedical_kg/Disease"/>
+    <rdfs:label>Opportunistic Infection</rdfs:label>
+    <ex:type>Disease</ex:type>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/biomedical_kg/Process">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Process</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/biomedical_kg/resource/Scalp_Irritation">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://example.org/biomedical_kg/Symptom"/>
+    <rdfs:label>Scalp Irritation</rdfs:label>
+    <ex:type>Symptom</ex:type>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/biomedical_kg/resource/Cytochrome_P450">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://example.org/biomedical_kg/Biological_Structure"/>
+    <rdfs:label>Cytochrome P450</rdfs:label>
+    <ex:type>Biological Structure</ex:type>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/biomedical_kg/activates">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label>activates</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/biomedical_kg/resource/Flaking">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://example.org/biomedical_kg/Symptom"/>
+    <rdfs:label>Flaking</rdfs:label>
+    <ex:type>Symptom</ex:type>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/biomedical_kg/Enzyme">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Enzyme</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/biomedical_kg/Biological_Process">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Biological Process</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/biomedical_kg/Disease">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Disease</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/biomedical_kg/resource/Fungal_Infection">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://example.org/biomedical_kg/Disease"/>
+    <rdfs:label>Fungal Infection</rdfs:label>
+    <ex:type>Disease</ex:type>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/biomedical_kg/resource/Streptococcus">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://example.org/biomedical_kg/Microorganism"/>
+    <rdfs:label>Streptococcus</rdfs:label>
+    <ex:type>Microorganism</ex:type>
+    <ex:associated_with rdf:resource="http://example.org/biomedical_kg/resource/Seborrheic_Dermatitis"/>
+    <ex:related_to rdf:resource="http://example.org/biomedical_kg/resource/Seborrheic_Dermatitis"/>
+    <ex:associated_with_relation>associated_with</ex:associated_with_relation>
+    <ex:associated_with_source>37325288/1301</ex:associated_with_source>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/biomedical_kg/causes">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label>causes</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/biomedical_kg/resource/Skin_Microbiome">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://example.org/biomedical_kg/Biological_Process"/>
+    <rdfs:label>Skin Microbiome</rdfs:label>
+    <ex:type>Biological Process</ex:type>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/biomedical_kg/Substance">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Substance</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/biomedical_kg/Microorganism">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Microorganism</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/biomedical_kg/protects">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label>protects</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/biomedical_kg/resource/Skin_Microbiota">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://example.org/biomedical_kg/Biological_Process"/>
+    <rdfs:label>Skin Microbiota</rdfs:label>
+    <ex:type>Biological Process</ex:type>
+  </rdf:Description>
+</rdf:RDF>

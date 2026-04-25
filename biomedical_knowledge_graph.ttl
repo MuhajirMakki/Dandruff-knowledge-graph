@@ -1,0 +1,332 @@
+@prefix ex: <http://example.org/biomedical_kg/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res: <http://example.org/biomedical_kg/resource/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+ex:BiomedicalKnowledgeGraph a owl:Ontology ;
+    rdfs:label "Biomedical Knowledge Graph" .
+
+ex:activates a owl:ObjectProperty ;
+    rdfs:label "activates" .
+
+ex:associated_with a owl:ObjectProperty ;
+    rdfs:label "associated_with" .
+
+ex:breaks_down a owl:ObjectProperty ;
+    rdfs:label "breaks_down" .
+
+ex:causes a owl:ObjectProperty ;
+    rdfs:label "causes" .
+
+ex:damages a owl:ObjectProperty ;
+    rdfs:label "damages" .
+
+ex:inhibits a owl:ObjectProperty ;
+    rdfs:label "inhibits" .
+
+ex:produces a owl:ObjectProperty ;
+    rdfs:label "produces" .
+
+ex:protects a owl:ObjectProperty ;
+    rdfs:label "protects" .
+
+ex:related_to a owl:ObjectProperty ;
+    rdfs:label "related_to" .
+
+res:Aspergillus a ex:Microorganism,
+        owl:NamedIndividual ;
+    rdfs:label "Aspergillus" ;
+    ex:associated_with res:Fungal_Infection ;
+    ex:associated_with_relation "associated_with" ;
+    ex:associated_with_source 5052 ;
+    ex:related_to res:Fungal_Infection ;
+    ex:type "Microorganism" .
+
+res:Candida a ex:Microorganism,
+        owl:NamedIndividual ;
+    rdfs:label "Candida" ;
+    ex:associated_with res:Opportunistic_Infection ;
+    ex:associated_with_relation "associated_with" ;
+    ex:associated_with_source 5475 ;
+    ex:related_to res:Opportunistic_Infection ;
+    ex:type "Microorganism" .
+
+res:Ciclopirox a ex:Drug,
+        owl:NamedIndividual ;
+    rdfs:label "Ciclopirox" ;
+    ex:inhibits res:Dna_Replication ;
+    ex:inhibits_relation "inhibits" ;
+    ex:inhibits_source 2749 ;
+    ex:related_to res:Dna_Replication,
+        res:Seborrheic_Dermatitis ;
+    ex:treats res:Seborrheic_Dermatitis ;
+    ex:treats_relation "treats" ;
+    ex:treats_source 2749 ;
+    ex:type "Drug" .
+
+res:Cutibacterium a ex:Microorganism,
+        owl:NamedIndividual ;
+    rdfs:label "Cutibacterium" ;
+    ex:protects res:Skin_Microbiome ;
+    ex:protects_relation "protects" ;
+    ex:protects_source 1912216 ;
+    ex:related_to res:Skin_Microbiome ;
+    ex:type "Microorganism" .
+
+res:Filobasidium a ex:Microorganism,
+        owl:NamedIndividual ;
+    rdfs:label "Filobasidium" ;
+    ex:associated_with res:Skin_Microbiota ;
+    ex:associated_with_relation "associated_with" ;
+    ex:associated_with_source 5209 ;
+    ex:related_to res:Skin_Microbiota ;
+    ex:type "Microorganism" .
+
+res:Fluconazole a ex:Drug,
+        owl:NamedIndividual ;
+    rdfs:label "Fluconazole" ;
+    ex:inhibits res:Ergosterol_Synthesis ;
+    ex:inhibits_relation "inhibits" ;
+    ex:inhibits_source 3365 ;
+    ex:related_to res:Ergosterol_Synthesis,
+        res:Seborrheic_Dermatitis ;
+    ex:treats res:Seborrheic_Dermatitis ;
+    ex:treats_relation "treats" ;
+    ex:treats_source 3365 ;
+    ex:type "Drug" .
+
+res:Itraconazole a ex:Drug,
+        owl:NamedIndividual ;
+    rdfs:label "Itraconazole" ;
+    ex:inhibits res:Cytochrome_P450 ;
+    ex:inhibits_relation "inhibits" ;
+    ex:inhibits_source 55283 ;
+    ex:related_to res:Cytochrome_P450,
+        res:Seborrheic_Dermatitis ;
+    ex:treats res:Seborrheic_Dermatitis ;
+    ex:treats_relation "treats" ;
+    ex:treats_source 55283 ;
+    ex:type "Drug" .
+
+res:Ketoconazole a ex:Drug,
+        owl:NamedIndividual ;
+    rdfs:label "Ketoconazole" ;
+    ex:inhibits res:Ergosterol_Synthesis ;
+    ex:inhibits_relation "inhibits" ;
+    ex:inhibits_source 47576 ;
+    ex:related_to res:Dandruff,
+        res:Ergosterol_Synthesis,
+        res:Seborrheic_Dermatitis ;
+    ex:treats res:Dandruff,
+        res:Seborrheic_Dermatitis ;
+    ex:treats_relation "treats" ;
+    ex:treats_source 47576,
+        "47576/37325288" ;
+    ex:type "Drug" .
+
+res:Malassezia a ex:Microorganism,
+        owl:NamedIndividual ;
+    rdfs:label "Malassezia" ;
+    ex:activates res:Inflammatory_Response ;
+    ex:activates_relation "activates" ;
+    ex:activates_source 29946996 ;
+    ex:causes res:Dandruff,
+        res:Seborrheic_Dermatitis ;
+    ex:causes_relation "causes" ;
+    ex:causes_source 14450,
+        "37325288/14450/29946996" ;
+    ex:produces res:Lipase ;
+    ex:produces_relation "produces" ;
+    ex:produces_source 29946996 ;
+    ex:related_to res:Dandruff,
+        res:Inflammatory_Response,
+        res:Lipase,
+        res:Seborrheic_Dermatitis ;
+    ex:type "Microorganism" .
+
+res:Malassezia_Globosa a ex:Microorganism,
+        owl:NamedIndividual ;
+    rdfs:label "Malassezia Globosa" ;
+    ex:associated_with res:Seborrheic_Dermatitis ;
+    ex:associated_with_relation "associated_with" ;
+    ex:associated_with_source "37325288/76773" ;
+    ex:related_to res:Seborrheic_Dermatitis ;
+    ex:type "Microorganism" .
+
+res:Malassezia_Restricta a ex:Microorganism,
+        owl:NamedIndividual ;
+    rdfs:label "Malassezia Restricta" ;
+    ex:associated_with res:Dandruff ;
+    ex:associated_with_relation "associated_with" ;
+    ex:associated_with_source "14450/76775" ;
+    ex:related_to res:Dandruff ;
+    ex:type "Microorganism" .
+
+res:Selenium_Sulfide a ex:Drug,
+        owl:NamedIndividual ;
+    rdfs:label "Selenium Sulfide" ;
+    ex:related_to res:Dandruff ;
+    ex:treats res:Dandruff ;
+    ex:treats_relation "treats" ;
+    ex:treats_source 24011 ;
+    ex:type "Drug" .
+
+res:Staphylococcus a ex:Microorganism,
+        owl:NamedIndividual ;
+    rdfs:label "Staphylococcus" ;
+    ex:associated_with res:Dandruff ;
+    ex:associated_with_relation "associated_with" ;
+    ex:associated_with_source "14450/1279" ;
+    ex:damages res:Skin_Barrier ;
+    ex:damages_relation "damages" ;
+    ex:damages_source "1279/14450" ;
+    ex:related_to res:Dandruff,
+        res:Skin_Barrier ;
+    ex:type "Microorganism" .
+
+res:Streptococcus a ex:Microorganism,
+        owl:NamedIndividual ;
+    rdfs:label "Streptococcus" ;
+    ex:associated_with res:Seborrheic_Dermatitis ;
+    ex:associated_with_relation "associated_with" ;
+    ex:associated_with_source "37325288/1301" ;
+    ex:related_to res:Seborrheic_Dermatitis ;
+    ex:type "Microorganism" .
+
+res:Zinc_Pyrithione a ex:Drug,
+        owl:NamedIndividual ;
+    rdfs:label "Zinc Pyrithione" ;
+    ex:related_to res:Dandruff ;
+    ex:treats res:Dandruff ;
+    ex:treats_relation "treats" ;
+    ex:treats_source 26041 ;
+    ex:type "Drug" .
+
+ex:treats a owl:ObjectProperty ;
+    rdfs:label "treats" .
+
+ex:Biological_Structure a owl:Class ;
+    rdfs:label "Biological Structure" .
+
+ex:Chemical a owl:Class ;
+    rdfs:label "Chemical" .
+
+ex:Enzyme a owl:Class ;
+    rdfs:label "Enzyme" .
+
+ex:Process a owl:Class ;
+    rdfs:label "Process" .
+
+ex:Substance a owl:Class ;
+    rdfs:label "Substance" .
+
+ex:Symptom a owl:Class ;
+    rdfs:label "Symptom" .
+
+res:Cytochrome_P450 a ex:Biological_Structure,
+        owl:NamedIndividual ;
+    rdfs:label "Cytochrome P450" ;
+    ex:type "Biological Structure" .
+
+res:Dna_Replication a ex:Biological_Process,
+        owl:NamedIndividual ;
+    rdfs:label "Dna Replication" ;
+    ex:type "Biological Process" .
+
+res:Flaking a ex:Symptom,
+        owl:NamedIndividual ;
+    rdfs:label "Flaking" ;
+    ex:type "Symptom" .
+
+res:Fungal_Infection a ex:Disease,
+        owl:NamedIndividual ;
+    rdfs:label "Fungal Infection" ;
+    ex:type "Disease" .
+
+res:Inflammatory_Response a ex:Process,
+        owl:NamedIndividual ;
+    rdfs:label "Inflammatory Response" ;
+    ex:type "Process" .
+
+res:Lipase a ex:Enzyme,
+        owl:NamedIndividual ;
+    rdfs:label "Lipase" ;
+    ex:breaks_down res:Sebum ;
+    ex:breaks_down_relation "breaks_down" ;
+    ex:breaks_down_source 29946996 ;
+    ex:related_to res:Sebum ;
+    ex:type "Enzyme" .
+
+res:Oleic_Acid a ex:Chemical,
+        owl:NamedIndividual ;
+    rdfs:label "Oleic Acid" ;
+    ex:causes res:Flaking,
+        res:Scalp_Irritation ;
+    ex:causes_relation "causes" ;
+    ex:causes_source 29946996 ;
+    ex:related_to res:Flaking,
+        res:Scalp_Irritation ;
+    ex:type "Chemical" .
+
+res:Opportunistic_Infection a ex:Disease,
+        owl:NamedIndividual ;
+    rdfs:label "Opportunistic Infection" ;
+    ex:type "Disease" .
+
+res:Scalp_Irritation a ex:Symptom,
+        owl:NamedIndividual ;
+    rdfs:label "Scalp Irritation" ;
+    ex:type "Symptom" .
+
+res:Sebum a ex:Substance,
+        owl:NamedIndividual ;
+    rdfs:label "Sebum" ;
+    ex:produces res:Oleic_Acid ;
+    ex:produces_relation "produces" ;
+    ex:produces_source 29946996 ;
+    ex:related_to res:Oleic_Acid ;
+    ex:type "Substance" .
+
+res:Skin_Barrier a ex:Biological_Process,
+        owl:NamedIndividual ;
+    rdfs:label "Skin Barrier" ;
+    ex:type "Biological Process" .
+
+res:Skin_Microbiome a ex:Biological_Process,
+        owl:NamedIndividual ;
+    rdfs:label "Skin Microbiome" ;
+    ex:type "Biological Process" .
+
+res:Skin_Microbiota a ex:Biological_Process,
+        owl:NamedIndividual ;
+    rdfs:label "Skin Microbiota" ;
+    ex:type "Biological Process" .
+
+ex:Disease a owl:Class ;
+    rdfs:label "Disease" .
+
+res:Ergosterol_Synthesis a ex:Biological_Process,
+        owl:NamedIndividual ;
+    rdfs:label "Ergosterol Synthesis" ;
+    ex:type "Biological Process" .
+
+ex:Biological_Process a owl:Class ;
+    rdfs:label "Biological Process" .
+
+ex:Drug a owl:Class ;
+    rdfs:label "Drug" .
+
+ex:Microorganism a owl:Class ;
+    rdfs:label "Microorganism" .
+
+res:Dandruff a ex:Disease,
+        owl:NamedIndividual ;
+    rdfs:label "Dandruff" ;
+    ex:type "Disease" .
+
+res:Seborrheic_Dermatitis a ex:Disease,
+        owl:NamedIndividual ;
+    rdfs:label "Seborrheic Dermatitis" ;
+    ex:type "Disease" .
+
